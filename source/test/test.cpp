@@ -1,7 +1,6 @@
 #include "gtest/gtest.h"
-#include "../../headers/PasswordManager.h"
+#include "PasswordManager.h"
 
 TEST(CheckIfCMakeWorks, returnsTrue) {
     ASSERT_TRUE(true);
 }
-

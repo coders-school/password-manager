@@ -1,10 +1,8 @@
 #include <iostream>
 
-#include "../headers/PasswordManager.h"
+#include "PasswordManager.h"
 
-PasswordManager::PasswordManager() {}
-
-PasswordManager::PasswordManager(std::string password)
+PasswordManager::PasswordManager(const std::string& password)
     :  password_(password)
 {
     std::cout << "Password is: " << password_ << '\n';

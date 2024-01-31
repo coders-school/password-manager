@@ -4,12 +4,10 @@
 
 class PasswordManager {
 public:
-    PasswordManager();
-    PasswordManager(std::string password);
+    PasswordManager() = default;
+    PasswordManager(const std::string& password);
 
     ~PasswordManager();
-
-
 private:
     std::string password_;
 };
