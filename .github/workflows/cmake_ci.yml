@@ -31,9 +31,6 @@ jobs:
       # Build your program with the given configuration
       run: cmake --build ${{env.BUILD_PATH}} --config ${{env.BUILD_TYPE}}
 
-    - name: Install
-      run: make install -C ${{env.BUILD_PATH}}
-
     - name: Test
       working-directory: ${{env.BUILD_PATH}}
       run: ctest -C ${{env.BUILD_TYPE}}
