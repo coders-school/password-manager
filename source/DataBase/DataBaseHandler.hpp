@@ -15,6 +15,7 @@ public:
 
     void createTable(const std::string &tableName, const std::string &columns);
     void insertData(const std::string &tableName, const std::vector<std::string> &columns, const std::vector<std::string> &values);
+    void deleteData(const std::string &tableName, const std::string &columns, const std::string &value);
 
     void updateData(
         const std::string &tableName,

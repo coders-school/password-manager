@@ -70,6 +70,12 @@ void DataBaseHandler::insertData(const std::string &tableName, const std::vector
     executeQuery(query);
 }
 
+void DataBaseHandler::deleteData(const std::string &tableName, const std::string &columns, const std::string &value)
+{
+    std::string query = "DELETE FROM " + tableName + " WHERE " + columns + " = '" + value + "';";
+    executeQuery(query);
+}
+
 void DataBaseHandler::updateData(
     const std::string &tableName,
     const std::string &setRecord,
