@@ -4,16 +4,28 @@
 #include <string>
 struct DataBaseCommon
 {
-    static constexpr std::vector<std::string> userRecordsRecords{"Username", "Password"};
-    static constexpr std::vector<std::string> categoriesRecords{"Category"};
-    static constexpr std::vector<std::string> passwordHistoryRecords{"Creation_Time", "Modify_Time", "Expiry_Time"};
-    static constexpr std::vector<std::string> passwordRecords{
-        "User_Id", "Category_Id", "Title", "Username", "Password", "Note", "Url"};
+    static const std::vector<std::string> userRecordsRecords;
+    static const std::vector<std::string> categoriesRecords;
+    static const std::vector<std::string> passwordHistoryRecords;
+    static const std::vector<std::string> passwordRecords;
 
-    static constexpr std::string dataBasePath{"../../../source/dataBase/password-manager.db"};
+    static const std::string dataBasePath;
 
-    static constexpr std::string users{"Users"};
-    static constexpr std::string passwords{"Passwords"};
-    static constexpr std::string passwordHistory{"PasswordHistory"};
-    static constexpr std::string categories{"Categories"};
+    static const std::string users;
+    static const std::string passwords;
+    static const std::string passwordHistory;
+    static const std::string categories;
 };
+
+const std::vector<std::string> DataBaseCommon::userRecordsRecords{"Username", "Password"};
+const std::vector<std::string> DataBaseCommon::categoriesRecords{"Category"};
+const std::vector<std::string> DataBaseCommon::passwordHistoryRecords{"Creation_Time", "Modify_Time", "Expiry_Time"};
+const std::vector<std::string> DataBaseCommon::passwordRecords{
+    "User_Id", "Category_Id", "Title", "Username", "Password", "Note", "Url"};
+
+const std::string DataBaseCommon::dataBasePath{"../../../source/dataBase/password-manager.db"};
+
+const std::string DataBaseCommon::users{"Users"};
+const std::string DataBaseCommon::passwords{"Passwords"};
+const std::string DataBaseCommon::passwordHistory{"PasswordHistory"};
+const std::string DataBaseCommon::categories{"Categories"};
