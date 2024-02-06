@@ -1,8 +1,8 @@
 #include <string>
 
 #include "PasswordManager.h"
-#include "dataBase/DataBaseHandler.hpp"
-#include "dataBase/DataBaseCommon.hpp"
+#include "DataBase/DataBaseHandler.hpp"
+#include "DataBase/DataBaseCommon.hpp"
 
 int main()
 {

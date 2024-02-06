@@ -8,4 +8,4 @@ target_include_directories(sqlite3 PUBLIC ../lib)
 target_link_libraries(passwordManager PRIVATE sqlite3)
 
 add_subdirectory(test)
-add_subdirectory(dataBase)
+add_subdirectory(DataBase)
