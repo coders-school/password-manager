@@ -2,17 +2,18 @@
 
 #include "PasswordManager.h"
 #include "DataBase/DataBaseHandler.hpp"
-#include "DataBase/DataBaseCommon.hpp"
+#include "DataBase/common/DataBaseCommon.hpp"
 
 int main()
 {
     std::string password = "haslo";
     PasswordManager passwordManager(password);
     const std::vector<std::string> passwordValues{
-        "1", "test", "test", "test", "test", "test", "test", "test", "Modify_Time", "Expiry_Time"};
+        "1", "test", "test", "test", "test", "test", "test"};
     try
     {
-        DataBaseHandler dataBaseHandler(DataBaseCommon::dataBasePath);
+        dataBase::DataBaseHandler dataBaseHandler(dataBase::common::dataBasePath);
+        dataBaseHandler.insertData(dataBase::common::passwords, dataBase::common::passwordRecords, passwordValues);
         std::cout << "dataBase is working" << std::endl;
     }
     catch (const std::exception &e)

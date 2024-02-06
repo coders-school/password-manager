@@ -7,30 +7,34 @@
 
 #include "sqlite3.h"
 
-class DataBaseHandler
+namespace dataBase
 {
-public:
-    DataBaseHandler(const std::string &dbName);
-    ~DataBaseHandler();
 
-    void createTable(const std::string &tableName, const std::string &columns);
-    void insertData(const std::string &tableName, const std::vector<std::string> &columns, const std::vector<std::string> &values);
-    void deleteData(const std::string &tableName, const std::string &columns, const std::string &value);
+    class DataBaseHandler
+    {
+    public:
+        DataBaseHandler(const char *dbName);
+        ~DataBaseHandler();
 
-    void updateData(
-        const std::string &tableName,
-        const std::string &setRecord,
-        const std::string &setValue,
-        const std::string &findRecord,
-        const std::string &findValue);
+        void createTable(const std::string &tableName, const std::string &columns);
+        void insertData(const std::string &tableName, const std::vector<std::string> &columns, const std::vector<std::string> &values);
+        void deleteData(const std::string &tableName, const std::string &columns, const std::string &value);
 
-    void selectData(
-        const std::string &tableName,
-        const std::string &findRecord,
-        const std::string &findValue);
+        void updateData(
+            const std::string &tableName,
+            const std::string &setRecord,
+            const std::string &setValue,
+            const std::string &findRecord,
+            const std::string &findValue);
 
-private:
-    void executeQuery(const std::string &query);
+        void selectData(
+            const std::string &tableName,
+            const std::string &findRecord,
+            const std::string &findValue);
 
-    sqlite3 *database_;
-};
+    private:
+        void executeQuery(const char *query);
+        sqlite3 *database_;
+    };
+
+}
