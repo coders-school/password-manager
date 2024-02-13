@@ -1,4 +1,5 @@
-# Password Manager Application
+# Password Manager Application [![Password Manager CI](https://github.com/coders-school/password-manager/actions/workflows/cmake_ci.yml/badge.svg?branch=main)](https://github.com/coders-school/password-manager/actions/workflows/cmake_ci.yml)
+
 
 Welcome to our Password Manager Application, a secure and efficient solution for managing your sensitive login credentials. Designed with robust security and user-friendly features, this application is ideal for individuals and businesses seeking a reliable password management system.
 
