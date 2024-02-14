@@ -8,7 +8,7 @@ FetchContent_Declare(
     GIT_TAG release-1.11.0
 )
 
-FetchContent_MakeAvailable(googletest) 
+FetchContent_MakeAvailable(googletest)
 
 add_executable(${TEST_NAME} test.cpp)
 target_link_libraries(${TEST_NAME} gtest_main)
