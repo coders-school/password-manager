@@ -24,4 +24,3 @@ endif()
 
 include_directories(headers)
 add_subdirectory(source)
-
