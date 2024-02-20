@@ -1,8 +1,8 @@
 #include "PasswordManager.h"
 
-#include <iostream>
+#include "Common/Logger.hpp"
 
-PasswordManager::PasswordManager(const std::string &password)
+PasswordManager::PasswordManager(const std::string& password)
     : password_(password) {
   std::cout << "Password is: " << password_ << '\n';
 }
