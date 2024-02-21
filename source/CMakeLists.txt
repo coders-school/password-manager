@@ -11,3 +11,4 @@ target_link_libraries(passwordManager PRIVATE sqlite3 ${OPENSSL_LIBRARIES})
 
 add_subdirectory(test)
 add_subdirectory(DataBase)
+add_subdirectory(Registration)
