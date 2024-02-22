@@ -1,10 +1,9 @@
 #pragma once
 
-#include "string"
+#include <string>
 
-class User 
-{
- public:
+class User {
+public:
   User();
   ~User() {}
 
@@ -12,7 +11,7 @@ class User
   std::string getPassword() { return password_; }
   std::string getEmail() { return email_; }
 
- private:
+private:
   std::string name_;
   std::string password_;
   std::string email_;

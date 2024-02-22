@@ -1,18 +1,17 @@
 #pragma once
 
-#include "string"
+#include <string>
 
 #include "User.hpp"
 
-class RegistrationHandler
-{
- public:
+class RegistrationHandler {
+public:
   RegistrationHandler();
   ~RegistrationHandler();
 
   bool checkUser();
   void addUser();
 
- private:
+private:
   User user_;
 };

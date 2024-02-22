@@ -1,21 +1,9 @@
 #include "RegistrationHandler.hpp"
 
-RegistrationHandler::RegistrationHandler()
-{
+RegistrationHandler::RegistrationHandler() {}
 
-}
+RegistrationHandler::~RegistrationHandler() {}
 
-RegistrationHandler::~RegistrationHandler()
-{
+bool RegistrationHandler::checkUser() { return true; }
 
-}
-
-bool RegistrationHandler::checkUser()
-{
-  return true;
-}
-
-void RegistrationHandler::addUser()
-{
-
-}
+void RegistrationHandler::addUser() {}
