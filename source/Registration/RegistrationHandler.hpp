@@ -5,13 +5,13 @@
 #include "User.hpp"
 
 class RegistrationHandler {
-public:
+ public:
   RegistrationHandler();
   ~RegistrationHandler();
 
   bool checkUser();
   void addUser();
 
-private:
+ private:
   User user_;
 };
