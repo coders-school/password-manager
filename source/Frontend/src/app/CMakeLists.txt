@@ -1,5 +1,6 @@
 qt_add_executable(${PROJECT_NAME}
     main.cpp
+    mainwindow.h mainwindow.cpp mainwindow.ui
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Widgets)
