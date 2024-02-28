@@ -15,6 +15,7 @@ target_link_libraries(passwordManager PRIVATE sqlite3 ${OPENSSL_LIBRARIES} ${Boo
 
 add_subdirectory(test)
 add_subdirectory(DataBase)
+add_subdirectory(Frontend)
 
 target_include_directories(passwordManager PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/headers
