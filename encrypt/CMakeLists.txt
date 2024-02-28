@@ -3,11 +3,11 @@ cmake_minimum_required(VERSION 3.14)
 # # Basic Files
 file(GLOB project_src
     "symCrypt/*.cpp"
+    "hash/*.cpp"
 )
 
 project(encrpyt)
 
-option(ENCRPYT_CPP_BUILD_STANDALONE "Set if you wish to fetch all dependencies and build standalone unit tests." OFF)
 option(USE_SYSTEM_OPENSSL "Use the system's OpenSSL if available" OFF)
 
 include(FindPackageHandleStandardArgs)

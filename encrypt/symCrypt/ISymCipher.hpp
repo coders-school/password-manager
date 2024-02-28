@@ -5,6 +5,7 @@
 
 namespace encrypt {
 struct ISymCipher {
+  virtual ~ISymCipher() = default;
   virtual void encrypt(const std::string &key,
                        std::span<const unsigned char> plainText,
                        std::span<unsigned char> &cipherText) const = 0;
