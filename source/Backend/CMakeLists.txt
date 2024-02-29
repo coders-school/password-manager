@@ -1,8 +1,9 @@
 project(PasswordManager)
 
 add_library(sqlite3 STATIC ${LIB_DIR}/sqlite3.c)
+
 find_package(OpenSSL REQUIRED)
-include_directories(${OPENSSL_INCLUDE_DIR})
+find_package(Boost REQUIRED)
 
 add_executable(passwordManager
     main.cpp
@@ -10,8 +11,11 @@ add_executable(passwordManager
     Common/Logger.cpp)
 
 target_include_directories(sqlite3 PUBLIC ${LIB_DIR})
-target_link_libraries(passwordManager PRIVATE sqlite3 ${OPENSSL_LIBRARIES})
+target_link_libraries(passwordManager PRIVATE sqlite3 ${OPENSSL_LIBRARIES} ${Boost_LIBRARIES})
 
 add_subdirectory(DataBase)
 
-target_include_directories(passwordManager PRIVATE ${HEADERS_DIR})
+target_include_directories(passwordManager PRIVATE
+    ${HEADERS_DIR}
+    ${Boost_INCLUDE_DIRS}
+    ${OPENSSL_INCLUDE_DIR})
