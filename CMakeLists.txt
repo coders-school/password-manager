@@ -8,6 +8,9 @@ project(PasswordManager)
 
 set(FLAGS -Wall -Werror -Wpedantic -Wextra)
 
+set(LIB_DIR ${PROJECT_SOURCE_DIR}/lib)
+set(HEADERS_DIR ${PROJECT_SOURCE_DIR}/headers)
+
 enable_testing()
 
 if(NOT CMAKE_BUILD_TYPE)
