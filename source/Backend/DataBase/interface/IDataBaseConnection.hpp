@@ -3,8 +3,6 @@
 #include <string>
 #include <vector>
 
-#include "sqlite3.h"
-
 namespace dataBase::interface {
 class IDataBaseConnection {
  public:

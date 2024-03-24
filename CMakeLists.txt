@@ -27,3 +27,4 @@ endif()
 
 include_directories(headers)
 add_subdirectory(source)
+add_subdirectory(lib)
