@@ -1,23 +1,23 @@
 #include <string>
 
 class PasswordChecker {
-public:
-    PasswordChecker(const std::string& password);
+ public:
+  PasswordChecker(const std::string& password);
 
-    bool isSafe();
+  bool isSafe();
 
-private:
-    std::string password;
+ private:
+  std::string password;
 
-    bool hasMinimumLength_;
-    bool hasMinimumUppercase_;
-    bool hasMinimumLowercase_;
-    bool hasMinimumDigit_;
-    bool hasMinimumSpecialChar_;
+  bool hasMinimumLength_;
+  bool hasMinimumUppercase_;
+  bool hasMinimumLowercase_;
+  bool hasMinimumDigit_;
+  bool hasMinimumSpecialChar_;
 
-    bool hasMinimumLength() const;
-    bool hasMinimumUppercase() const;
-    bool hasMinimumLowercase() const;
-    bool hasMinimumDigit() const;
-    bool hasMinimumSpecialChar() const;
+  bool hasMinimumLength() const;
+  bool hasMinimumUppercase() const;
+  bool hasMinimumLowercase() const;
+  bool hasMinimumSpecialChar() const;
+  bool hasMinimumDigit() const;
 };
