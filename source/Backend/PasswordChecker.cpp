@@ -1,4 +1,5 @@
 #include "PasswordChecker.hpp"
+
 #include <regex>
 
 PasswordChecker::PasswordChecker(const std::string& password)
